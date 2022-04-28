@@ -1,18 +1,26 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
-import { IconMenu, IconClose } from "../../components";
+import { IconMenu, IconClose, DarkMode } from "../../components";
 
 export default class Navbar extends Component {
   constructor(props) {
-    super(props);
+    super();
     this.state = {
       menus: [
         { title: "Home", link: "/" },
         { title: "Products", link: "/products" },
       ],
       showMenu: false,
+      darkMode: false,
     };
   }
+
+  callDarkmode = async () => {
+    await this.setState({ darkMode: !this.state.darkMode });
+    this.state.darkMode
+      ? document.body.classList.add("dark")
+      : document.body.classList.remove("dark");
+  };
 
   render() {
     return (
@@ -60,6 +68,12 @@ export default class Navbar extends Component {
                   </li>
                 );
               })}
+              <DarkMode
+                toggle={this.state.darkMode}
+                onClick={() => {
+                  this.callDarkmode();
+                }}
+              />
             </ul>
           </div>
         </div>

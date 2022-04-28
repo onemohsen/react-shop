@@ -5,7 +5,7 @@ export default function Spinner({ className }) {
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
         role="img"
-        class="iconify iconify--fa6-solid"
+        className="iconify iconify--fa6-solid"
         width="32"
         height="32"
         preserveAspectRatio="xMidYMid meet"

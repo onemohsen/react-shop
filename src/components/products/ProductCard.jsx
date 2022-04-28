@@ -29,7 +29,7 @@ export default class ProductmCard extends React.Component {
         className={`${this.state.className} hover:-mt-1 `}
       >
         <div className="space-y-3">
-          <div className="border border-dashed relative w-full h-80 overflow-hidden flex flex-col justify-center items-center p-5">
+          <div className="border border-dashed dark:border-gray-900 relative w-full h-80 overflow-hidden flex flex-col justify-center items-center p-5">
             <div className="">
               <img
                 src={this.state.item.image}
@@ -54,7 +54,7 @@ export default class ProductmCard extends React.Component {
           </div>
           <div className="">
             <div className="flex flex-col justify-between ">
-              <h3 className="text-gray-500 font-bold h-12 overflow-hidden">
+              <h3 className="text-gray-500 dark:text-white font-bold h-12 overflow-hidden">
                 {this.state.item.title}
               </h3>
               <Price

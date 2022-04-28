@@ -30,7 +30,7 @@ export default class Products extends Component {
         {this.state.loading ? (
           <Loading />
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-10">
             {this.state.products.map((product) => (
               <ProductCard key={product.id} item={product} className="" />
             ))}

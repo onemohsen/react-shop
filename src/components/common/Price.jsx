@@ -10,11 +10,11 @@ export default function Price({ price, oldPrice = null }) {
 
   return (
     <div className=" flex space-x-2 mt-2">
-      <p className="font-bold text-red-500">
+      <p className="font-bold text-red-500 dark:text-red-300">
         <span>{convertMoneyFormat(price)}</span>
       </p>
       {oldPrice && (
-        <p className="line-through text-gray-500 font-bold">
+        <p className="line-through text-gray-500 dark:text-gray-900 font-bold">
           <span>{convertMoneyFormat(oldPrice)}</span>
         </p>
       )}

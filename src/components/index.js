@@ -2,6 +2,7 @@
 export {default as Header} from "./layouts/Header";
 export {default as Footer} from "./layouts/Footer";
 export {default as Navbar} from "./layouts/Navbar";
+export {default as DarkMode} from "./layouts/header/DarkMode";
 
 
 /* Main */
@@ -21,6 +22,7 @@ export {default as IconClose} from "./common/icons/IconClose";
 export {default as IconGithub} from "./common/icons/IconGithub";
 export {default as Heart} from "./common/icons/Heart";
 export {default as Spinner} from "./common/icons/Spinner";
+export {default as Night} from "./common/icons/Night";
 
 
 /* Common */

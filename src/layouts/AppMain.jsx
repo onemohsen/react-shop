@@ -9,10 +9,12 @@ export default class AppMain extends Component {
 
   render() {
     return (
-      <div className="container mx-auto px-4 md:px-0 h-screen flex flex-col justify-between">
-        <Header />
-        {this.props.children}
-        <Footer />
+      <div className="dark:bg-gray-500  ">
+        <div className="container mx-auto px-4 md:px-0 flex flex-col justify-between">
+          <Header />
+          {this.props.children}
+          <Footer />
+        </div>
       </div>
     );
   }
