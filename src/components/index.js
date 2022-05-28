@@ -21,6 +21,12 @@ export {default as Home} from "../pages/Home";
 export {default as Products} from "../pages/products/Index";
 export {default as ProductId} from "../pages/products/Id";
 export {default as NotFound} from "../pages/NotFound";
+export {default as Admin} from "../pages/admin/Index";
+
+/* Admin Pages */
+export {default as AdminDashboard} from "../pages/admin/dashboard/Index";
+export {default as AdminProducts} from "../pages/admin/products/Index";
+
 
 
 /* Icons */
@@ -30,6 +36,9 @@ export {default as IconGithub} from "./common/icons/IconGithub";
 export {default as Heart} from "./common/icons/Heart";
 export {default as Spinner} from "./common/icons/Spinner";
 export {default as Night} from "./common/icons/Night";
+export {default as IconDashboard} from "./common/icons/IconDashboard";
+export {default as IconProduct} from "./common/icons/IconProduct";
+
 
 
 /* Common */

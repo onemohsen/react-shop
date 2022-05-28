@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
-import { IconMenu, IconClose, DarkMode,Search } from "../../components";
+import { IconMenu, IconClose, DarkMode, Search } from "../../components";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -9,6 +9,7 @@ export default class Navbar extends Component {
       menus: [
         { title: "Home", link: "/" },
         { title: "Products", link: "/products" },
+        { title: "Admin", link: "/admin" },
       ],
       showMenu: false,
       darkMode: false,
