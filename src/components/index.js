@@ -1,8 +1,14 @@
 /* Layouts */
+/* Services */
+import * as Api from "../services/api";
+export {Api};
+
+
 export {default as Header} from "./layouts/Header";
 export {default as Footer} from "./layouts/Footer";
 export {default as Navbar} from "./layouts/Navbar";
 export {default as DarkMode} from "./layouts/header/DarkMode";
+export {default as Search} from "./layouts/header/Search";
 
 
 /* Main */
@@ -12,7 +18,8 @@ export {default as Router} from "./Router";
 
 /* Pages */
 export {default as Home} from "../pages/Home";
-export {default as Products} from "../pages/Products";
+export {default as Products} from "../pages/products/Index";
+export {default as ProductId} from "../pages/products/Id";
 export {default as NotFound} from "../pages/NotFound";
 
 
@@ -33,7 +40,6 @@ export {default as Loading} from "./common/Loading";
 
 /* Products */
 export {default as ProductCard} from "./products/ProductCard";
-
 
 
 

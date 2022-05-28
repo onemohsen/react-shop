@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
-import { IconMenu, IconClose, DarkMode } from "../../components";
+import { IconMenu, IconClose, DarkMode,Search } from "../../components";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -47,6 +47,7 @@ export default class Navbar extends Component {
               className={`${this.state.showMenu ? "" : "hidden"} w-6 h-6`}
             />
           </button>
+          <Search />
           <div
             className={`${
               this.state.showMenu ? "" : "hidden"
