@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { ProductCard, Loading, Api } from "../components";
+import { ProductCard, Loading, Api } from "../../components";
 
 export default class Products extends Component {
   constructor(props) {

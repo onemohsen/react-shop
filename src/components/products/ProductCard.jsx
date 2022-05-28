@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Tag, Price, Heart } from "../../components";
 
 export default class ProductmCard extends React.Component {
@@ -30,13 +31,13 @@ export default class ProductmCard extends React.Component {
       >
         <div className="space-y-3">
           <div className="border border-dashed dark:border-gray-900 relative w-full h-80 overflow-hidden flex flex-col justify-center items-center p-5">
-            <div className="">
+            <Link to={`/products/${this.state.item.id}`} className="">
               <img
                 src={this.state.item.image}
                 className="object-contain h-40"
                 alt=""
               />
-            </div>
+            </Link>
             <div className=" absolute bottom-1 left-1 space-x-2">
               {this.state.randomBoolean && (
                 <Tag title={`${Math.round(this.state.percent * 10)} %`} />
