@@ -26,6 +26,7 @@ export {default as Admin} from "../pages/admin/Index";
 /* Admin Pages */
 export {default as AdminDashboard} from "../pages/admin/dashboard/Index";
 export {default as AdminProducts} from "../pages/admin/products/Index";
+export {default as AdminProductsCreate} from "../pages/admin/products/Create";
 
 
 

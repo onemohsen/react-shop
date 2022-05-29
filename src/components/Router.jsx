@@ -8,6 +8,7 @@ import {
   Admin,
   AdminDashboard,
   AdminProducts,
+  AdminProductsCreate,
 } from "../components/index";
 
 export default class Routers extends Component {
@@ -19,6 +20,7 @@ export default class Routers extends Component {
           <Route path="/products" element={<Products />} />
           <Route path="/admin" element={<Admin />}>
             <Route path="dashboard" element={<AdminDashboard />} />
+            <Route path="products/create" element={<AdminProductsCreate />} />
             <Route path="products" element={<AdminProducts />} />
           </Route>
           <Route path="/" element={<Home />} />
