@@ -5,14 +5,17 @@ import './index.css';
 import AppMain from './layouts/AppMain';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <AppMain>
-        <App />
-      </AppMain>
+      <ErrorBoundary>
+        <AppMain>
+          <App />
+        </AppMain>
+      </ErrorBoundary>
     </BrowserRouter>
   </React.StrictMode>
 );
